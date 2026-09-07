@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Electricity Bill</title>
+</head>
+<body>
+<h2>Electricity Bill Calculator</h2>
+<div id="result"></div>
+<script>
+
+let units = 250;
+let bill = 0;
+
+if(units <= 100)
+{
+    bill = units * 5;
+}
+else if(units <= 200)
+{
+    bill = (100 * 5) + ((units-100)*7);
+}
+else
+{
+    bill = (100*5) + (100*7) + ((units-200)*10);
+}
+let status;
+if(units > 200)
+{
+    status = "High Consumption";
+}
+else
+{
+    status = "Normal Consumption";
+}
+document.getElementById("result").innerHTML =
+"Consumed Units: " + units + "<br>" +
+"Total Bill: Tk " + bill + "<br>" +
+status;
+</script>
+</body>
+</html>

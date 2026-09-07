@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shopping Bill</title>
+</head>
+<body>
+
+<h2>Online Shopping Bill</h2>
+<div id="bill"></div>
+<script>
+let product1 = "Keyboard";
+let price1 = 800;
+let quantity1 = 2;
+let product2 = "Mouse";
+let price2 = 500;
+let quantity2 = 3;
+let product3 = "Headphone";
+let price3 = 1200;
+let quantity3 = 1;
+let total = 
+(price1 * quantity1) +
+(price2 * quantity2) +
+(price3 * quantity3);
+
+document.getElementById("bill").innerHTML =
+product1 + 
+" Price: " + price1 +
+" Quantity: " + quantity1 + "<br>" +
+product2 +
+" Price: " + price2 +
+" Quantity: " + quantity2 + "<br>" +
+product3 +
+" Price: " + price3 +
+" Quantity: " + quantity3 + "<br><br>" +
+"Total Bill = Tk " + total;
+</script>
+</body>
+</html>

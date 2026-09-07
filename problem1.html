@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Information</title>
+</head>
+<body>
+<h2>Student Academic Information</h2>
+
+<div id="result"></div>
+<script>
+let studentName = "Tanvir Naeem";
+let studentID = "2254901076";
+let department = "ICE";
+let semester = "6th";
+let cgpa = 2.61;
+let message;
+if(cgpa >= 3.00)
+{
+    message = "CGPA is Good";
+}
+else
+{
+    message = "CGPA is Below 3.00";
+}
+document.getElementById("result").innerHTML =
+
+"Student Name: " + studentName + "<br>" +
+"Student ID: " + studentID + "<br>" +
+"Department: " + department + "<br>" +
+"Semester: " + semester + "<br>" +
+"CGPA: " + cgpa + "<br><br>" +
+message;
+
+</script>
+</body>
+</html>
