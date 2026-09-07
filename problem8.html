@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Scholarship System</title>
+</head>
+
+
+<body>
+<h2>Scholarship Eligibility</h2>
+
+
+CGPA:
+<input type="number" id="cgpa" step="0.01">
+
+<br><br>
+
+Attendance:
+<input type="number" id="attendance">
+<br><br>
+
+<button onclick="checkScholarship()">
+Check
+</button>
+
+<p id="result"></p>
+<script>
+
+function checkScholarship()
+{
+let cgpa = document.getElementById("cgpa").value;
+let attendance = document.getElementById("attendance").value;
+if(cgpa >= 3.75)
+{
+document.getElementById("result").innerHTML =
+"Eligible";
+}
+else if(cgpa >= 3.50 && attendance >= 90)
+{
+document.getElementById("result").innerHTML =
+"Eligible";
+}
+else
+{
+document.getElementById("result").innerHTML =
+"Not Eligible";
+}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Admission Eligibility</title>
+</head>
+
+<body>
+
+<h2>Admission Eligibility Checker</h2>
+
+SSC GPA:
+<input type="number" id="ssc" step="0.01">
+
+<br><br>
+
+HSC GPA:
+<input type="number" id="hsc" step="0.01">
+
+<br><br>
+
+Admission Mark:
+<input type="number" id="mark">
+
+<br><br>
+
+<button onclick="checkEligibility()">Check</button>
+<p id="result"></p>
+
+<script>
+
+function checkEligibility()
+{
+let ssc = document.getElementById("ssc").value;
+let hsc = document.getElementById("hsc").value;
+let mark = document.getElementById("mark").value;
+
+if(ssc >= 3.50 && hsc >= 3.50 && mark >= 40)
+{
+document.getElementById("result").innerHTML =
+"Eligible";
+}
+else
+{
+document.getElementById("result").innerHTML =
+"Not Eligible";
+}
+}
+</script>
+</body>
+</html>
